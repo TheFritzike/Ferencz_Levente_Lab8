@@ -4,14 +4,16 @@ using Ferencz_Levente_Lab8.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Ferencz_Levente_Lab8.Migrations
 {
     [DbContext(typeof(Ferencz_Levente_Lab8Context))]
-    partial class Ferencz_Levente_Lab8ContextModelSnapshot : ModelSnapshot
+    [Migration("20201107170049_BookCategory")]
+    partial class BookCategory
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -15,5 +15,9 @@ namespace Ferencz_Levente_Lab8.Data
         }
 
         public DbSet<Ferencz_Levente_Lab8.Models.Book> Book { get; set; }
+
+        public DbSet<Ferencz_Levente_Lab8.Models.Publisher> Publisher { get; set; }
+
+        public DbSet<Ferencz_Levente_Lab8.Models.BookCategory> BookCategory { get; set; }
     }
 }
